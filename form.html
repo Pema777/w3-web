@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <style>
+      body {
+        background-image: url(notebook\ and\ pen);
+        background-repeat: no-repeat;
+        background-blend-mode: soft-light;
+        background-color: #f0d8d8;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-left :240px;
+      }
+      h1{
+        text-align: center;
+        font-size:50px;
+      }
+      #btn{
+    background-color: #0eb5ff;
+    color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Online Pay</h1>
+    <label for="Fname">First Name:</label><br />
+    <input type="text" id="Fname" />
+    <div>
+      Lname:<br />
+      <input type="text" id="Lname" />
+    </div>
+    <fieldset>
+      <legend>Gender</legend>
+      <div>
+        Male<input type="radio" id="male" /> Female<input
+          type="radio"
+          id="female"
+        />
+      </div>
+    </fieldset>
+    <br />
+    <label for="gmail">Gmail</label>
+    <input type="email" placeholder="...@gmail.com" id="Gmail" /><br /><br />
+    <div>
+      Contact:
+      <input type="number" id="Contact" name="Contact" />
+    </div>
+    <p>
+        Adddress
+      </p>
+    <textarea
+        name="Adress"
+        id="Address"
+        cols="30"
+        rows="10"
+      ></textarea><br>
+    <button id="btn">Submit</button>
+  </body>
+</html>
