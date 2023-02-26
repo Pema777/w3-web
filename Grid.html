@@ -8,46 +8,56 @@
     <style>
         .container{
             display : grid;
-            /* height : 400px; */
+            height : 700px;
             background-color: red;
             /* grid-template-columns: repeat(3,1fr); */
-            /* grid-template-rows: repeat(3,1fr); */
+            /* grid-template-rows: repeat(3,1fr);  */
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            /* grid-template-rows: 13px 1fr 1fr; */
-            row-gap: 10px;
-            column-gap: 10px;
-            place-self: center;
+            grid-template-rows: 100px 1fr 100px;
+            /* grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px  ; */
+              row-gap: 10px;
+            column-gap: 10px; 
+            /* grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr); */
+            
+            justify-items: end;
         
         }
         .item{
-            /* width : 80px;
-            height : 80px;   */
+            width : 80px;
+            /* height : 80px;    */
             background-color: black;
         }
       .item-1{
-        grid-column : 1 /span 3;
-        height: 80px;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color : white;
+        /* grid-row : 1 /span 3; */
+      }
+      .item-2{
+        color : white;
       }
 
    .item-5{
-    grid-column : 1 /span 3;
-    height: 80px
+     grid-column : 1 /span 3;
+
    }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item-1 item"></div>
-        <div class="item-2 item"></div>
+        <div class="item-1 item"> Lorem, ipsum dolor sit amet dolore consequuntur doloremque quis nemo deleniti soluta doloribus blanditiis! Placeat blanditiis enim consequatur nostrum animi, assumenda ex explicabo porro maxime laboriosam, quibusdam quaerat! Pariatur perferendis modi aperiam libero voluptatum consequuntur labore cupiditate quasi ullam vitae facere earum, esse nihil perspiciatis minima? Tenetur eos ducimus amet eaque numquam quam voluptatem incidunt.
+             I'm the first item</div>
+        <div class="item-2 item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim beatae dignissimos, perspiciatis, incidunt vel quos eius sapiente rerum consectetur sed, iure obcaecati corrupti!</div>
         <div class="item-3 item"></div>
         <div class="item-4  item"></div>
         <div class="item-5 item"></div>
-        <!-- <div class="item-6 item"></div>
-        <div class="item-7 item"></div> -->
-        <!-- <div class="item-6 item"></div> -->
-        <!-- <div class="item-7 item"></div>
-        <div class="item-8 item"></div> -->
+        <div class="item-6 item"></div>
+        <div class="item-7 item"></div>
+    
+     
     </div>
 </body>
 </html>
